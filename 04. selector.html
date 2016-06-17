@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+
+        $("#show_alert").click(function() {
+
+            var pars = $("p");
+            var text="";
+            for( i=0; i<pars.length; i++ ){
+                text += pars[i].innerHTML+"  ";
+            }
+
+            alert(text);
+        });
+
+        $("#myp").click(function () {
+            alert("Paragrapg with id is clicked");
+        })
+
+        $(".myp").click(function () {
+            alert("Paragrapg with class is clicked");
+        })
+
+        //for any selector
+        $("#green").click(function () {
+            $("*").css("background-color","green");
+        });
+
+    });
+</script>
+
+
+<p>I am a Paragraph </p>
+<p id="myp">Paragraph with id </p>
+<p class="myp">Paragraph with class</p>
+
+<p id="show_alert">Alert paragraph</p>
+<p id="green"> Make everything green </p>
+</body>
+</html>

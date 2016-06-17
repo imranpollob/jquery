@@ -8,8 +8,11 @@
 <body>
 <script>
     $(document).ready(function () {
-        $("#myh1").click(function() {
-            alert("Hello world!");
+
+        $("#myh1").click(function(event) {
+
+            document.write(event.target);
+
         });
     });
 </script>

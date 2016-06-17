@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+        //object
+        var Person = {
+            name: "Pollob",
+            age: 23
+        }
+
+        //array
+        var person = ["Tanji", "Arif", "Prantik", 23];
+
+
+        $("#myh1").click(function() {
+            document.write(Person.name);
+
+            for (var i=0; i<person.length; i++){
+                document.write("<br>"+person[i]);
+            }
+        });
+    });
+</script>
+
+
+<h1 id="myh1">Click this text</h1>
+
+</body>
+</html>

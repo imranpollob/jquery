@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script src="jquery.min.js"></script>
+    <style>
+        .big{
+            font-size: 25px;
+            color: chocolate;
+        }
+    </style>
 </head>
 <body>
 <script>
     $(document).ready(function () {
+
         $("#myh1").click(function() {
-            alert("Hello world!");
+            $("#result").text($("#pid").hasClass("big"));
         });
+
+
+
     });
 </script>
 
+<p class="big" id="pid">This is first paragraph.</p>
+<h3 id="myh1">Check for big class</h3>
 
-<h1 id="myh1">Click this text</h1>
+<p id="result"></p>
 
 </body>
 </html>

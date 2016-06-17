@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        .big{
+            font-size: 25px;
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+
+        $("#myB").click(function() {
+
+            var value = $("#myInput").val();
+            $("#pid").text(value);
+            $("#myInput2").val(value);
+        });
+
+
+
+    });
+</script>
+
+<input type="text" id="myInput">
+<p id="pid">Result</p>
+<input type="text" id="myInput2">
+
+<button id="myB">Show value</button>
+
+
+
+</body>
+</html>

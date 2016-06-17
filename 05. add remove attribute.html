@@ -9,13 +9,23 @@
 <script>
     $(document).ready(function () {
         $("#myh1").click(function() {
-            alert("Hello world!");
+            $("a").attr("href","https://www.google.com.bd/");
         });
+
+        $("#myh2").click(function() {
+            $("a").removeAttr("href");
+        });
+
+
     });
 </script>
 
+<a style="">Google</a>
 
-<h1 id="myh1">Click this text</h1>
+<h3 id="myh1">Click to active the link</h3>
+<h3 id="myh2">Click to delete the link</h3>
+
+
 
 </body>
 </html>

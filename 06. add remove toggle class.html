@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        .big{
+            font-size: 25px;
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+        $("#myh1").click(function() {
+            $("p").addClass("big");
+        });
+
+        $("#myh2").click(function() {
+            $("p").removeClass("big");
+        });
+
+        $("#myh3").click(function() {
+            $("p").toggleClass("big");
+        });
+
+    });
+</script>
+
+<p>Google</p>
+<h3 id="myh1">Change Google</h3>
+<h3 id="myh2">Redo</h3>
+<h3 id="myh3">Toggle</h3>
+
+</body>
+</html>

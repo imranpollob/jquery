@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        .big{
+            font-size: 25px;
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+
+        $("#myB").click(function() {
+
+            var value = $("p#pid1").text();
+            $("p#pid2").html(value);
+        });
+
+
+
+    });
+</script>
+
+<p class="big" id="pid1">This is <i>first paragraph</i>.</p>
+<p id="pid2">This is second paragraph.</p>
+
+<button id="myB">copy first para to second para</button>
+
+
+
+</body>
+</html>
